@@ -1,4 +1,4 @@
-from datetime import datetime
+import datetime
 from puppycompanyblog import db, login_manager
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
@@ -33,7 +33,7 @@ class BlogPost(db.Model):
 
   id = db.Column(db.Integer, primary_key=True)
   user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-  date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+  date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.now(datetime.timezone.utc))
   title = db.Column(db.String(140), nullable=False)
   text = db.Column(db.Text, nullable=False)
 

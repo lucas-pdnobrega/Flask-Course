@@ -7,7 +7,7 @@ from flask import url_for, current_app
 def add_profile_pic(pic_upload, username):
   
   filename = pic_upload.filename
-  extension = pic_upload.split('.')[-1]
+  extension = filename.split('.')[-1]
   storage_filename = str(username) + '.' + extension
 
   filepath = os.path.join(current_app.root_path,'static\profile_pics', storage_filename)
