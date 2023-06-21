@@ -1,0 +1,1 @@
+{"version":2,"languages":{"python-python3-poetry":{"specfileHash":"e8ca4d5a0fe3fef421572722838375e4","lockfileHash":"742e07b1696095bc65742cb124d0087c","guessedImports":["flask-login","flask-migrate","flask-bcrypt","flask-dance","flask-sqlalchemy","alembic","sqlalchemy","pillow"],"guessedImportsHash":"71fb7674c3effe7202dbc2477347a8be"}}}
