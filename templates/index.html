@@ -1,0 +1,14 @@
+<h1>Donation</h1>
+<h2>Wanna donate?</h2>
+<form action="{{url_for('payment')}}" method="post">
+    <script>
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key={{public_key}}
+        data-amount="1999"
+        data-name="Puppy Adoption"
+        data-description="Donation"
+        data-locale="auto"
+        data-zip-code="true"
+    </script>
+</form>
